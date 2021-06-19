@@ -1,0 +1,18 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.UI;
+
+public class HealthBar : MonoBehaviour
+{
+    [SerializeField] private PlayerHealth health;
+    [SerializeField] private Image currentHealthBar;
+
+    private void Start() {
+        currentHealthBar.fillAmount = health.currentHealth / 10;
+    }
+
+    private void Update() {
+        currentHealthBar.fillAmount = health.currentHealth / 10;
+    }
+}

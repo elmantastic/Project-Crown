@@ -1,0 +1,63 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Terrain
+  - Spike
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - Ground
+  - SwitchGround
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Background
+    uniqueID: 284632919
+    locked: 0
+  - name: Playforms
+    uniqueID: 4273431095
+    locked: 0
+  - name: Decoration
+    uniqueID: 2895321073
+    locked: 0
+  - name: Player
+    uniqueID: 3686716503
+    locked: 0
+  - name: Terrain
+    uniqueID: 2375613519
+    locked: 0
+  - name: Foreground
+    uniqueID: 1871599575
+    locked: 0
