@@ -7,17 +7,18 @@ public class LevelManager : MonoBehaviour
 {
     public static LevelManager instance;
     public Transform respownPoint;
+    public Transform canvasPosition;
     public GameObject playerPrefab;
+    public GameObject countDownPrefab;
     public CinemachineVirtualCamera cam;
     public PointFollow followPoint;
-    public HealthBar healthBar;
 
     private void Awake() {
         instance = this;
     }
 
     public void PlayerDie(){
-        Invoke("Respawn", 3);
+        ShowCountDown();
     }
 
     public void Respawn(){
@@ -25,5 +26,11 @@ public class LevelManager : MonoBehaviour
 
         cam.Follow = player.transform;
         followPoint.unitGameObject = player.transform;
+    }
+
+    private void ShowCountDown(){
+        GameObject countDown = Instantiate(countDownPrefab, canvasPosition.position, Quaternion.identity);
+
+        countDown.transform.parent = canvasPosition;
     }
 }
