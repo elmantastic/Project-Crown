@@ -10,9 +10,12 @@ public class PlayerHealth : MonoBehaviour
 
     private PlayerDeath death;
 
+    private void Start() {
+        death = GetComponent<PlayerDeath>();
+    }
+
     private void Awake() {
         currentHealth = startingHealth;
-
     }
 
     public void TakeDamage(float _damage){
@@ -25,18 +28,25 @@ public class PlayerHealth : MonoBehaviour
         } else {
             // player death
             // animation player die
-            Destroy(gameObject);
-            LevelManager.instance.PlayerDie();
+            death.playerDeath();
             currentHealth = startingHealth;
         }
     }
 
     private void Update() {
         if(rechargeHealthTime > 2f){
-            currentHealth = Mathf.Clamp(currentHealth + 0.5f, 0, startingHealth);
+            currentHealth = Mathf.Clamp(currentHealth + 0.3f, 0, startingHealth);
             rechargeHealthTime = 0;
         } else {
             rechargeHealthTime += Time.deltaTime;
         }
+    }
+
+    public void Heal(){
+        currentHealth = Mathf.Clamp(currentHealth + 2f, 0, startingHealth);
+    }
+
+    public bool isFullHP(){
+        return currentHealth == startingHealth;
     }
 }

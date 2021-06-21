@@ -14,7 +14,7 @@ public class TimeCountdown : MonoBehaviour
     private string timeDisplay = "";
 
     private void Start() {
-        textDisplay.GetComponent<TextMeshProUGUI>().text = minutesLeft +":"+ timeDisplay + secondsLeft;
+        textDisplay.GetComponent<TextMeshProUGUI>().text = "0" + minutesLeft +":"+ timeDisplay + secondsLeft;
     }
 
     private void Update() {

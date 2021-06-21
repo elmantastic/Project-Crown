@@ -75,6 +75,7 @@ public class Player : MonoBehaviour
     public LayerMask whatIsSwitchGround;
 
     private PlayerHealth health;
+    private PlayerSkill skill;
 
     // Start is called before the first frame update
     void Start()
@@ -84,6 +85,7 @@ public class Player : MonoBehaviour
         anim = GetComponent<Animator>();
         sprt = GetComponent<SpriteRenderer>();
         health = GetComponent<PlayerHealth>();
+        skill = GetComponent<PlayerSkill>();
         amountOfJumpsLeft = amountOfJumps;
 
         // biar vectornya jadi 1 biar disa dikalikan dengan forcenya jadi hasilnya ttp forcenya
@@ -102,6 +104,7 @@ public class Player : MonoBehaviour
         CheckLedgeClimb();
         CheckDash();
         CheckIfCanGoThroughWall();
+        
     }
 
     private void FixedUpdate() {
@@ -137,7 +140,7 @@ public class Player : MonoBehaviour
             }
         }
 
-        if(verticalInputDirection < 0.001f && isSwitchGrounded && movementInputDirection == 0){
+        if(verticalInputDirection < 0f && isSwitchGrounded && movementInputDirection == 0){
             if(Input.GetKeyDown(KeyCode.Space)){
                 bc.isTrigger = true;
                 jumpDownTimer = 0f;
@@ -165,7 +168,7 @@ public class Player : MonoBehaviour
             canThroughWall = true;
         }
 
-        if(Input.GetAxis("Mouse ScrollWheel") > 0f ){
+        if(Input.GetAxis("Mouse ScrollWheel") > 0f && !isOnWall){
             // forward scroll
             if(Time.time >= (lastDash + dashCooldown)){
                 AttemptToDash();
@@ -299,6 +302,7 @@ public class Player : MonoBehaviour
 
     private void AttemptToDash(){
         isDashing = true;
+        skill.Dashing();
         dashTimeLeft = dashTime;
         lastDash = Time.time;
 
@@ -308,24 +312,29 @@ public class Player : MonoBehaviour
 
     private void CheckDash(){
         if(isDashing){
-            canMove = false;
-            canFlip = false;
 
-            rb.velocity = new Vector2(dashSpeed * facingDirection, 0); // set the y to rb.velocity.y jika pengen bisa jatuh saat dash
-            //rb.AddForce(new Vector2( 2.5f * facingDirection, 0), ForceMode2D.Impulse);
-            dashTimeLeft -= Time.deltaTime;
+            if(dashTimeLeft > 0 ){
+                canMove = false;
+                canFlip = false;
 
-            if(Mathf.Abs(transform.position.x - lastImageXpos) > distanceBetweenImage){
-                PlayerAfterImagePool.Instance.GetFromPool();
-                lastImageXpos = transform.position.x;
+                rb.velocity = new Vector2(dashSpeed * facingDirection, 0); // set the y to rb.velocity.y jika pengen bisa jatuh saat dash
+                //rb.AddForce(new Vector2( 2.5f * facingDirection, 0), ForceMode2D.Impulse);
+                dashTimeLeft -= Time.deltaTime;
+
+                if(Mathf.Abs(transform.position.x - lastImageXpos) > distanceBetweenImage){
+                    PlayerAfterImagePool.Instance.GetFromPool();
+                    lastImageXpos = transform.position.x;
+                }
+
+            }
+
+            if(dashTimeLeft <= 0){
+                isDashing = false;
+                canMove = true;
+                canFlip = true;
             }
         }
 
-        if(dashTimeLeft <= 0){
-            isDashing = false;
-            canMove = true;
-            canFlip = true;
-        }
     }
 
     private void ApplyMovement(){
@@ -429,7 +438,7 @@ public class Player : MonoBehaviour
             canMove = false;
             amountOfJumpsLeft = amountOfJumps;
             turnTimer = turnTimerSet;
-            Vector2 impulse = new Vector2(5 * -facingDirection, 15);
+            Vector2 impulse = new Vector2(5 * -facingDirection, 12);
             rb.AddForce(impulse, ForceMode2D.Impulse);
 
             // take damage

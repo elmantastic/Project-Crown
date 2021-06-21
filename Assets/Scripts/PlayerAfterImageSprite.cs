@@ -8,8 +8,8 @@ public class PlayerAfterImageSprite : MonoBehaviour
     private float activeTime = 0.1f;
     private float timeActivated;
     private float alpha;
-    private float alphaSet = 0.5f;
-    private float alphaMultiplier = 1f; // untuk seberapa cepat sprite fade
+    private float alphaSet = 0.8f;
+    private float alphaMultiplier = 0.85f; // untuk seberapa cepat sprite fade
 
     private Transform player;
 
@@ -33,7 +33,7 @@ public class PlayerAfterImageSprite : MonoBehaviour
 
     private void Update() {
         alpha *= alphaMultiplier;
-        color = new Color(1f, 1f, 1f, alpha);
+        color = new Color(1f, 1f, 200f, alpha);
         SR.color = color;
 
         if(Time.time >= (timeActivated + activeTime)){
