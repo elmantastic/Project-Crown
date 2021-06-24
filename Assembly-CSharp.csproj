@@ -36,6 +36,8 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\CollectAble\Diamond.cs" />
+     <Compile Include="Assets\Scripts\CollectAble\DiamondCounter.cs" />
      <Compile Include="Assets\Scripts\Enemy\Spikes.cs" />
      <Compile Include="Assets\Scripts\Health\HealthBar.cs" />
      <Compile Include="Assets\Scripts\Health\PlayerDeath.cs" />

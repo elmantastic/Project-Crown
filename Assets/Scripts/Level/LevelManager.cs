@@ -10,6 +10,7 @@ public class LevelManager : MonoBehaviour
     public Transform canvasPosition;
     public GameObject playerPrefab;
     public GameObject countDownPrefab;
+    public DiamondCounter diamondCounter;
     public CinemachineVirtualCamera cam;
     public PointFollow followPoint;
 
@@ -39,5 +40,9 @@ public class LevelManager : MonoBehaviour
 
     public int GetMinute(){
         return levelTime;
+    }
+
+    public void AddDiamond(){
+        diamondCounter.AddDiamond();
     }
 }
