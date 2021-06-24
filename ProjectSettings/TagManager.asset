@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Terrain
   - Spike
+  - MovingTerrain
   layers:
   - Default
   - TransparentFX

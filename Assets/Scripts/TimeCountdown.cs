@@ -8,12 +8,13 @@ using TMPro;
 public class TimeCountdown : MonoBehaviour
 {
     public TMP_Text textDisplay;
-    public int minutesLeft = 4;
-    public int secondsLeft = 59;
+    private int minutesLeft = 4;
+    private int secondsLeft = 59;
     public bool takingAway = false;
     private string timeDisplay = "";
 
     private void Start() {
+        GetTime();
         textDisplay.GetComponent<TextMeshProUGUI>().text = "0" + minutesLeft +":"+ timeDisplay + secondsLeft;
     }
 
@@ -47,4 +48,7 @@ public class TimeCountdown : MonoBehaviour
         takingAway = false;
     }
 
+    private void GetTime(){
+        minutesLeft = LevelManager.instance.GetMinute();
+    }
 }

@@ -444,6 +444,17 @@ public class Player : MonoBehaviour
             // take damage
             health.TakeDamage(2);
         }
+
+
+        if(collision.gameObject.tag == "MovingTerrain"){
+            transform.parent = collision.gameObject.transform;
+        }
+    }
+
+    private void OnCollisionExit2D(Collision2D other) {
+        if(other.gameObject.tag == "MovingTerrain"){
+            transform.parent = null;
+        }
     }
 
 }

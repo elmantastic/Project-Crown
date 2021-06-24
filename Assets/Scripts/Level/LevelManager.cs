@@ -13,8 +13,11 @@ public class LevelManager : MonoBehaviour
     public CinemachineVirtualCamera cam;
     public PointFollow followPoint;
 
+    private int levelTime = 4;
+
     private void Awake() {
         instance = this;
+        levelTime = GameManager.instance.minutesLevel;
     }
 
     public void PlayerDie(){
@@ -32,5 +35,9 @@ public class LevelManager : MonoBehaviour
         GameObject countDown = Instantiate(countDownPrefab, canvasPosition.position, Quaternion.identity);
 
         countDown.transform.parent = canvasPosition;
+    }
+
+    public int GetMinute(){
+        return levelTime;
     }
 }
