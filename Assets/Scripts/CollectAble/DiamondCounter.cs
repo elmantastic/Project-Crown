@@ -21,4 +21,8 @@ public class DiamondCounter : MonoBehaviour
         diamond++;
     }
 
+    public int GetDiamondCount(){
+        return diamond;
+    }
+
 }

@@ -42,7 +42,10 @@
      <Compile Include="Assets\Scripts\Health\HealthBar.cs" />
      <Compile Include="Assets\Scripts\Health\PlayerDeath.cs" />
      <Compile Include="Assets\Scripts\Health\PlayerHealth.cs" />
+     <Compile Include="Assets\Scripts\Level\Achivement.cs" />
+     <Compile Include="Assets\Scripts\Level\FinishLevelTrigger.cs" />
      <Compile Include="Assets\Scripts\Level\GameManager.cs" />
+     <Compile Include="Assets\Scripts\Level\LevelComplete.cs" />
      <Compile Include="Assets\Scripts\Level\LevelManager.cs" />
      <Compile Include="Assets\Scripts\MainMenu.cs" />
      <Compile Include="Assets\Scripts\MapSelect.cs" />
