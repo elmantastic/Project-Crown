@@ -1,0 +1,580 @@
+fileFormatVersion: 2
+guid: fe4a3fae59fd1584f9b1b1667e17f5f1
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4417483476837049381
+    second: Machine 1_0
+  - first:
+      213: 1453992746097532133
+    second: Machine 1_1
+  - first:
+      213: -2926436907340346835
+    second: Machine 1_2
+  - first:
+      213: -4994004357927480231
+    second: Machine 1_3
+  - first:
+      213: 1014523459417146429
+    second: Machine 1_4
+  - first:
+      213: 1084859205769837996
+    second: Machine 1_5
+  - first:
+      213: 4190347359456823518
+    second: Machine 1_6
+  - first:
+      213: 4552923808654734941
+    second: Machine 1_7
+  - first:
+      213: -4740358706431509996
+    second: Machine 1_8
+  - first:
+      213: 7239992371212447208
+    second: Machine 1_9
+  - first:
+      213: 8298421697905967085
+    second: Machine 1_10
+  - first:
+      213: 1384663409608812230
+    second: Machine 1_11
+  - first:
+      213: 417959702083656420
+    second: Machine 1_12
+  - first:
+      213: 5451788289492671254
+    second: Machine 1_13
+  - first:
+      213: -5168556041647143610
+    second: Machine 1_14
+  - first:
+      213: 6033073329586930078
+    second: Machine 1_15
+  - first:
+      213: -5881737389499162082
+    second: Machine 1_16
+  - first:
+      213: -589262316056510751
+    second: Machine 1_17
+  - first:
+      213: -7302614839158518709
+    second: Machine 1_18
+  - first:
+      213: 4820060495729563998
+    second: Machine 1_19
+  - first:
+      213: 2400410361553714094
+    second: Machine 1_20
+  - first:
+      213: 2146675591142317383
+    second: Machine 1_21
+  - first:
+      213: 5762964934522443426
+    second: Machine 1_22
+  - first:
+      213: -8573936347474985397
+    second: Machine 1_23
+  - first:
+      213: 759606508241024483
+    second: Machine 1_24
+  - first:
+      213: -6558385846877542522
+    second: Machine 1_25
+  - first:
+      213: 305515382134297844
+    second: Machine 1_26
+  - first:
+      213: 6457521046905934241
+    second: Machine 1_27
+  - first:
+      213: -8286725847651282403
+    second: Machine 1_28
+  - first:
+      213: 3329917375318338833
+    second: Machine 1_29
+  - first:
+      213: -7695459385104937643
+    second: Machine 1_30
+  - first:
+      213: -2686521777517132552
+    second: Machine 1_31
+  - first:
+      213: -6442464662103574446
+    second: Machine 1_32
+  - first:
+      213: -8521903147540128032
+    second: Machine 1_33
+  - first:
+      213: -3665919233983979068
+    second: Machine 1_34
+  - first:
+      213: 515388722577871607
+    second: Machine 1_35
+  - first:
+      213: -1667898484879809
+    second: Machine 1_36
+  - first:
+      213: -1707552452411232747
+    second: Machine 1_37
+  - first:
+      213: -6077886839110248670
+    second: Machine 1_38
+  - first:
+      213: 4081956124721530593
+    second: Machine 1_39
+  - first:
+      213: -7598356341739694856
+    second: Machine 1_40
+  - first:
+      213: 3242376557321068940
+    second: Machine 1_41
+  - first:
+      213: -5423596557693105104
+    second: Machine 1_42
+  - first:
+      213: -6680625649337644451
+    second: Machine 1_43
+  - first:
+      213: -8318968324197649997
+    second: Machine 1_44
+  - first:
+      213: -4629005146877390449
+    second: Machine 1_45
+  - first:
+      213: 525312641380981948
+    second: Machine 1_46
+  - first:
+      213: 2163311584622286215
+    second: Machine 1_47
+  - first:
+      213: 1168926458954973357
+    second: Machine 1_48
+  - first:
+      213: 8905009533116618061
+    second: Machine 1_49
+  - first:
+      213: 528156922070115874
+    second: Machine 1_50
+  - first:
+      213: 3083568357684594935
+    second: Machine 1_51
+  - first:
+      213: 204429477080047289
+    second: Machine 1_52
+  - first:
+      213: 3246901316322775555
+    second: Machine 1_53
+  - first:
+      213: -2201111866303806377
+    second: Machine 1_54
+  - first:
+      213: -3060059842437064946
+    second: Machine 1_55
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Machine 1_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 524a70e31dd0e4d30800000000000000
+      internalID: 4417483476837049381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Machine 1_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ec5321f2be9d2410800000000000000
+      internalID: 1453992746097532133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Machine 1_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2ac26043253367d0800000000000000
+      internalID: -2926436907340346835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Machine 1_3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 954dafeee7bb1bab0800000000000000
+      internalID: -4994004357927480231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Machine 1_4
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d340cde06bf441e00800000000000000
+      internalID: 1014523459417146429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Machine 1_5
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cad393723b13e0f00800000000000000
+      internalID: 1084859205769837996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Machine 1_6
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed88be5d8ba172a30800000000000000
+      internalID: 4190347359456823518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Machine 1_7
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 0
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d56b840e41c3f2f30800000000000000
+      internalID: 4552923808654734941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Machine 1_8
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41a383b3fdcd63eb0800000000000000
+      internalID: -4740358706431509996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Machine 1_9
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 0
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ede7a6d3be997460800000000000000
+      internalID: 7239992371212447208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Machine 1_10
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 0
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: def341c319ae92370800000000000000
+      internalID: 8298421697905967085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Machine 1_11
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 0
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c6e637e800573310800000000000000
+      internalID: 1384663409608812230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Machine 1_12
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4eadf157224ecc500800000000000000
+      internalID: 417959702083656420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Machine 1_13
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 0
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61b58d18094a8ab40800000000000000
+      internalID: 5451788289492671254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures:
+    - texture: {fileID: 2800000, guid: 9e4f17732d3f6a147ad88443df015993, type: 3}
+      name: Emission
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

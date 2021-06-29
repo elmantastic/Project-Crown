@@ -22,11 +22,14 @@ public class LevelManager : MonoBehaviour
     private int diamondPrice = 300;
     private int machinePrice = 2000;
 
+    private Color platfromColor;
+
     private void Awake() {
         instance = this;
         levelTime = GameManager.instance.minutesLevel;
         diamondPrice = GameManager.instance.diamondPrice;
         machinePrice = GameManager.instance.machinePrice;
+        platfromColor = GameManager.instance.platformColor;
     }
 
     public void PlayerDie(){
@@ -58,6 +61,10 @@ public class LevelManager : MonoBehaviour
         diamondGrabed = diamondCounter.GetDiamondCount();
         completeLevelUI.SetActive(true);
     }
+    public void GameOverLevel(){
+        completeLevelUI.SetActive(true);
+    }
+
     public void ExitLevel(){
         SceneManager.LoadScene("MainMenu");
     }
@@ -75,5 +82,9 @@ public class LevelManager : MonoBehaviour
 
     public int GetDiamondGrabbed(){
         return diamondGrabed;
+    }
+
+    public Color GetPlatformColor(){
+        return platfromColor;
     }
 }

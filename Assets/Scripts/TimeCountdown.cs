@@ -30,6 +30,7 @@ public class TimeCountdown : MonoBehaviour
         if(secondsLeft == 0){
             if(minutesLeft == 0){
                 print("GAME OVER");
+                LevelManager.instance.GameOverLevel();
             } else {
                 minutesLeft--;
                 secondsLeft= 59;
