@@ -24,6 +24,7 @@ public class Player : MonoBehaviour
     private bool isRunning;
     private bool isGrounded;
     private bool isSwitchGrounded;
+    private bool onGround;
     private bool isOnWall;
     private bool isWallSliding;
     private bool isTouchLedge;
@@ -99,12 +100,12 @@ public class Player : MonoBehaviour
         CheckInput();
         CheckMovementDirection();
         UpdateAnimation();
+        CheckLedgeClimb();
         CheckIfCanJump();
         CheckIfWallSliding();
-        CheckLedgeClimb();
         CheckDash();
         CheckIfCanGoThroughWall();
-        
+        CheckOnGround();
     }
 
     private void FixedUpdate() {
@@ -193,8 +194,9 @@ public class Player : MonoBehaviour
     }
 
     private void CheckLedgeClimb(){
+        
         if(ledgeDetected && !canClimbLedge && isOnWall){
-
+            
             if(isFacingRight){
                 ledgePos1 = new Vector2(Mathf.Floor(ledgePostBot.x + wallCheckDistance) - ledgeClimbXOffset1, Mathf.Floor(ledgePostBot.y) + ledgeClimbYOffset1);
                 ledgePos2 = new Vector2(Mathf.Floor(ledgePostBot.x + wallCheckDistance) + ledgeClimbXOffset2, Mathf.Floor(ledgePostBot.y) + ledgeClimbYOffset2);
@@ -378,23 +380,42 @@ public class Player : MonoBehaviour
             Flip();
         }
 
-        if (movementInputDirection != 0){
+        //if (movementInputDirection != 0){
+        if (Mathf.Abs(rb.velocity.x) >= 0.01f){
             isRunning = true;
         } else {
             isRunning = false;  
         } 
     }
 
+    private void CheckOnGround(){
+        if(isGrounded || isSwitchGrounded){
+            onGround = true;
+        } else {
+            onGround = false;
+        }
+    }
+
     private void UpdateAnimation(){
         anim.SetBool("isRunning", isRunning);
         anim.SetBool("isWallSliding", isWallSliding);
+        anim.SetBool("isGrounded", onGround);
+        anim.SetBool("isSwitchGrounded", isSwitchGrounded);
+        anim.SetFloat("yVelocity", rb.velocity.y);
 
+        /*
         if(isWallSliding || isDamaged){
             sprt.color = Color.red;
         } else if (!isWallSliding && movementInputDirection != 0){
             sprt.color = Color.blue;
         } else if (isDashing){
             sprt.color = Color.yellow;
+        } else {
+            sprt.color = Color.white;
+        }
+        */
+        if(isDamaged){
+            sprt.color = Color.red;
         } else {
             sprt.color = Color.white;
         }
@@ -406,6 +427,14 @@ public class Player : MonoBehaviour
             isFacingRight = !isFacingRight;
             transform.Rotate(0.0f, 180.0f, 0.0f, 0.0f);
         }
+    }
+
+    private void DisbleFlip(){
+        canFlip = false;
+    }
+
+    private void EnableFlip(){
+        canFlip = true;
     }
 
     private void OnDrawGizmos() {

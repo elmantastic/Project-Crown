@@ -9,9 +9,11 @@ public class PlayerHealth : MonoBehaviour
     private float rechargeHealthTime;
 
     private PlayerDeath death;
+    private ParticleSystem ps;
 
     private void Start() {
         death = GetComponent<PlayerDeath>();
+        ps = GetComponent<ParticleSystem>();
     }
 
     private void Awake() {
@@ -43,10 +45,18 @@ public class PlayerHealth : MonoBehaviour
     }
 
     public void Heal(){
-        currentHealth = Mathf.Clamp(currentHealth + 2f, 0, startingHealth);
+        StartCoroutine(Healing());
+
     }
 
     public bool isFullHP(){
         return currentHealth == startingHealth;
+    }
+
+    private IEnumerator Healing(){
+        ps.Play();
+        currentHealth = Mathf.Clamp(currentHealth + 2f, 0, startingHealth);
+
+        yield return new WaitForSeconds(ps.main.startLifetime.constantMax);
     }
 }

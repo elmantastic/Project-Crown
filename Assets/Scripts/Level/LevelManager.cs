@@ -12,9 +12,13 @@ public class LevelManager : MonoBehaviour
     public GameObject playerPrefab;
     public GameObject countDownPrefab;
     public GameObject completeLevelUI;
+    public GameObject gameOverUI;
     public DiamondCounter diamondCounter;
+    public MachineCounter machineCounter;
     public CinemachineVirtualCamera cam;
     public PointFollow followPoint;
+
+    public bool isCompleteLevel;
     public int diamondGrabed = 0;
     public int machineDestroyed = 0;
 
@@ -22,14 +26,28 @@ public class LevelManager : MonoBehaviour
     private int diamondPrice = 300;
     private int machinePrice = 2000;
 
-    private Color platfromColor;
+    private int levelCurrentMap = 1;
+    //private int playerGold = 0;
+
+    private Color platfromColor = new Vector4 (0.825f, 2.108f, 0.829f, 1.0f);
+    private Color playerCurrentSkin = new Vector4 (0.106f, 1.380f, 2.462f, 0.5f);
 
     private void Awake() {
         instance = this;
-        levelTime = GameManager.instance.minutesLevel;
-        diamondPrice = GameManager.instance.diamondPrice;
-        machinePrice = GameManager.instance.machinePrice;
-        platfromColor = GameManager.instance.platformColor;
+        levelCurrentMap = GameManager.Instance.levelCurrentMap;
+        levelTime = GameManager.Instance.minutesLevel;
+        diamondPrice = GameManager.Instance.diamondPrice;
+        machinePrice = GameManager.Instance.machinePrice;
+        platfromColor = GameManager.Instance.platformColor;
+    }
+
+    private void Start() {
+        //Load Player Data // Sudah di load di main menu
+        // GameManager.Instance.LoadPlayerData(); 
+
+        //Set Data that we need
+        playerCurrentSkin = GameManager.Instance.currentSkin;
+        //playerGold = GameManager.Instance.GetPlayerGold();
     }
 
     public void PlayerDie(){
@@ -56,13 +74,23 @@ public class LevelManager : MonoBehaviour
     public void AddDiamond(){
         diamondCounter.AddDiamond();
     }
+    public void AddMachineDestroyed(){
+        machineCounter.AddMachineDestroyed();
+    }
 
     public void CompleteLevel(){
         diamondGrabed = diamondCounter.GetDiamondCount();
+        machineDestroyed = machineCounter.GetMachineDestroyed();
+        GameManager.Instance.SetPlayerLevelCompleted(levelCurrentMap);
+        isCompleteLevel = true;
         completeLevelUI.SetActive(true);
     }
     public void GameOverLevel(){
-        completeLevelUI.SetActive(true);
+        gameOverUI.SetActive(true);
+    }
+
+    public bool StopCountDownTime(){
+        return isCompleteLevel;
     }
 
     public void ExitLevel(){
@@ -87,4 +115,14 @@ public class LevelManager : MonoBehaviour
     public Color GetPlatformColor(){
         return platfromColor;
     }
+
+    public void SetPlayerGoldAchivement(int _gold){
+        //playerGold = _gold;
+        GameManager.Instance.SetPlayerGold(_gold);
+    }
+
+    public void SetLevelMap(int _levelMap){
+        levelCurrentMap = _levelMap;
+    }
+
 }

@@ -31,6 +31,7 @@ public class Achivement : MonoBehaviour
     private void Start() {
         GetObjectiveAchivement();
         GetTotalAchivement();
+        SaveGoldToPlayerData();
         canContinue = true;
     }
 
@@ -40,7 +41,8 @@ public class Achivement : MonoBehaviour
     }
 
     private void CheckInput(){
-        if(canContinue && Input.GetKeyDown(KeyCode.Return)){
+        if(canContinue && (Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown(KeyCode.Space))){
+            GameManager.Instance.SavePlayerData();
             LevelManager.instance.ExitLevel();
         }
     }
@@ -74,4 +76,7 @@ public class Achivement : MonoBehaviour
         totalGoldAchivement = machineTotalGold + diamondTotalGold;
     }
 
+    private void SaveGoldToPlayerData(){
+        LevelManager.instance.SetPlayerGoldAchivement(totalGoldAchivement);
+    }
 }

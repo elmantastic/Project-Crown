@@ -19,6 +19,7 @@ public class TimeCountdown : MonoBehaviour
     }
 
     private void Update() {
+        CheckStopCountdown();
         if(takingAway == false && minutesLeft >= 0){
             StartCoroutine(TimerTake());
         }
@@ -51,5 +52,12 @@ public class TimeCountdown : MonoBehaviour
 
     private void GetTime(){
         minutesLeft = LevelManager.instance.GetMinute();
+    }
+
+    public void CheckStopCountdown(){
+        if(LevelManager.instance.StopCountDownTime()){
+            minutesLeft = 99;
+
+        }
     }
 }
