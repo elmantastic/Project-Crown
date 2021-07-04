@@ -10,11 +10,11 @@ public class MapSelect : MonoBehaviour
         GameManager.Instance.SetLevelCurrentMap(1);
     }
     public void PlayLevel2(){
-        SceneManager.LoadScene("Level1");
+        SceneManager.LoadScene("Level2");
         GameManager.Instance.SetLevelCurrentMap(2);
     }
     public void PlayLevel3(){
-        SceneManager.LoadScene("Level1");
+        SceneManager.LoadScene("Level3");
         GameManager.Instance.SetLevelCurrentMap(3);
     }
 

@@ -115,6 +115,9 @@ public class LevelManager : MonoBehaviour
     public Color GetPlatformColor(){
         return platfromColor;
     }
+    public Color GetPlayerCurrentSkin(){
+        return playerCurrentSkin;
+    }
 
     public void SetPlayerGoldAchivement(int _gold){
         //playerGold = _gold;

@@ -64,6 +64,7 @@
      <Compile Include="Assets\Scripts\PlayerAfterImagePool.cs" />
      <Compile Include="Assets\Scripts\PlayerAfterImageSprite.cs" />
      <Compile Include="Assets\Scripts\PlayerCombat.cs" />
+     <Compile Include="Assets\Scripts\PlayerSkin.cs" />
      <Compile Include="Assets\Scripts\PointFollow.cs" />
      <Compile Include="Assets\Scripts\RespawnCoundown.cs" />
      <Compile Include="Assets\Scripts\Skill\Dash.cs" />

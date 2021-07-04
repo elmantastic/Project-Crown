@@ -11,6 +11,9 @@ public class MainMenu : MonoBehaviour
     private void Start() {
         CheckLevel();    
     }
+    private void Update() {
+        CheckLevel();
+    }
 
     private void CheckLevel(){
         for(int i = 0; i < Maps.Length; i++){

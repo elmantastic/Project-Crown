@@ -62,25 +62,29 @@ public class GameManager : MonoBehaviour
 
     public void SetLevelCurrentMap(int _mapLevel){
         levelCurrentMap = _mapLevel;
+        if(_mapLevel == 1){
+            platformColor = laserGreen;
+        } else if( _mapLevel == 2){
+            platformColor = laserRed;
+        } else {
+            platformColor = laserGold;
+        }
     }
 
     public void easyLevel(){
         minutesLevel = 4;
         machinePrice = 2000;
         diamondPrice = 300;
-        platformColor = laserGreen;
     }
     public void mediumLevel(){
         minutesLevel = 2;
         machinePrice = 4000;
         diamondPrice = 400;
-        platformColor = laserRed;
     }
     public void hardLevel(){
         minutesLevel = 1;
         machinePrice = 6000;
         diamondPrice = 500;
-        platformColor = laserGold;
     }
 
     private void CurrentSkinToFloat(){
