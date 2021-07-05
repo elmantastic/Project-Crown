@@ -43,13 +43,14 @@
      <Compile Include="Assets\Scripts\Enemy\HitParticle.cs" />
      <Compile Include="Assets\Scripts\Enemy\Machine.cs" />
      <Compile Include="Assets\Scripts\Enemy\MachineCounter.cs" />
-     <Compile Include="Assets\Scripts\Enemy\MeshRendererSortLayer.cs" />
      <Compile Include="Assets\Scripts\Enemy\Spikes.cs" />
      <Compile Include="Assets\Scripts\GameData\PlayerData.cs" />
      <Compile Include="Assets\Scripts\GameData\SaveSystem.cs" />
      <Compile Include="Assets\Scripts\Health\HealthBar.cs" />
      <Compile Include="Assets\Scripts\Health\PlayerDeath.cs" />
      <Compile Include="Assets\Scripts\Health\PlayerHealth.cs" />
+     <Compile Include="Assets\Scripts\Helper\Instruction.cs" />
+     <Compile Include="Assets\Scripts\Helper\MeshRendererSortLayer.cs" />
      <Compile Include="Assets\Scripts\Level\Achivement.cs" />
      <Compile Include="Assets\Scripts\Level\FinishLevelTrigger.cs" />
      <Compile Include="Assets\Scripts\Level\GameManager.cs" />
@@ -70,6 +71,7 @@
      <Compile Include="Assets\Scripts\Skill\Dash.cs" />
      <Compile Include="Assets\Scripts\Skill\Heal.cs" />
      <Compile Include="Assets\Scripts\Skill\PlayerSkill.cs" />
+     <Compile Include="Assets\Scripts\Terrain\FinishTerrain.cs" />
      <Compile Include="Assets\Scripts\Terrain\MovingTerrain.cs" />
      <Compile Include="Assets\Scripts\Terrain\Terrain.cs" />
      <Compile Include="Assets\Scripts\TimeCountdown.cs" />
