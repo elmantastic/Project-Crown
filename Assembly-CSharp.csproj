@@ -36,6 +36,7 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\Camera\MiniMap.cs" />
      <Compile Include="Assets\Scripts\CollectAble\Diamond.cs" />
      <Compile Include="Assets\Scripts\CollectAble\DiamondCounter.cs" />
      <Compile Include="Assets\Scripts\CollectAble\GoldCounter.cs" />
