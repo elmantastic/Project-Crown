@@ -21,7 +21,7 @@ public class GameManager : MonoBehaviour
     private Color laserGold = new Vector4 (2.09f, 1.27f, 0.6f, 1.0f);
 
     public Color currentSkin = new Vector4(0.106f, 1.380f, 2.462f, 0.5f);
-    public Color defaultSkin = new Vector4(0.106f, 1.380f, 2.462f, 0.5f);
+    public Color defaultSkin = new Vector4(0.0f, 0.0f, 0.0f, 0.5f);
     public List<Color> AvailableSkins = new List<Color>();
 
     [Header("Player Data")]
@@ -38,7 +38,7 @@ public class GameManager : MonoBehaviour
     private void Start() {
         platformColor = laserGreen;
         //AvailableSkins[0] = defaultSkin;
-        SetAvailableSkins();
+        //SetAvailableSkins();
     }
 
     public static GameManager Instance {
@@ -106,11 +106,35 @@ public class GameManager : MonoBehaviour
         currentSkin = skinColor;
     }
 
+    private void LoadAvailableSkin(){
+        if(playerSkinAvailable.GetLength(0) <= 0){
+            AvailableSkins.Add(defaultSkin);
+        } else {
+            AvailableSkins.Clear();
+            for(int i = 0; i < playerSkinAvailable.GetLength(0); i++){
+                Vector4 skinColor = new Vector4();
+                skinColor[0] = playerSkinAvailable[i, 0];
+                skinColor[1] = playerSkinAvailable[i, 1];
+                skinColor[2] = playerSkinAvailable[i, 2];
+                skinColor[3] = playerSkinAvailable[i, 3];
+
+                AvailableSkins.Add(skinColor);
+            }
+
+        }
+
+    }
+
     private void SetAvailableSkins(){
+        AvailableSkins.Add(defaultSkin);
         AvailableSkins.Add(laserGreen);
         AvailableSkins.Add(laserPink);
         AvailableSkins.Add(laserRed);
         AvailableSkins.Add(laserGold);
+    }
+
+    public void AddSkinToAvailableSkin(Color _color){
+        AvailableSkins.Add(_color);
     }
 
     private Vector4 ConvertColorToFloat(Color color){
@@ -152,6 +176,9 @@ public class GameManager : MonoBehaviour
     public int GetPlayerGold(){
         return playerGold;
     }
+    public void CalculatePlayerPayment(int _gold){
+        playerGold = _gold;
+    }
 
     public void SetPlayerLevelCompleted(int _level){
         if(playerLevelCompleted < _level){
@@ -161,6 +188,18 @@ public class GameManager : MonoBehaviour
     }
     public int GetPlayerLevelCompleted(){
         return playerLevelCompleted;
+    }
+    public List<Color> GetAvailablePlayerSkins(){
+        return AvailableSkins;
+    }
+
+    public void SetPlayerCurrentSkin(Color _colorSkin){
+        currentSkin = _colorSkin;
+        SavePlayerData();
+    }
+
+    public Color GetPlayerCurrentSkin(){
+        return currentSkin;
     }
 
 
@@ -192,7 +231,12 @@ public class GameManager : MonoBehaviour
 
             LoadCurrentSkin();
             //Load AvailableSkin (mungkin di main menu saja?)
+
+            LoadAvailableSkin();
             Debug.Log("Data Loaded");
+        } else {
+            currentSkin = defaultSkin;
+            AvailableSkins.Add(currentSkin);
         }
     }
 }

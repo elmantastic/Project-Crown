@@ -33,4 +33,9 @@ public class MainMenuManager : MonoBehaviour
     public int getPlayerGold(){
         return playerGold;
     }
+
+    public void CalculatePlayerGold(int _payment){
+        playerGold -= _payment;
+        GameManager.Instance.CalculatePlayerPayment(playerGold);
+    }
 }

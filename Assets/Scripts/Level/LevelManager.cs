@@ -39,6 +39,7 @@ public class LevelManager : MonoBehaviour
         diamondPrice = GameManager.Instance.diamondPrice;
         machinePrice = GameManager.Instance.machinePrice;
         platfromColor = GameManager.Instance.platformColor;
+        playerCurrentSkin = GameManager.Instance.GetPlayerCurrentSkin();
     }
 
     private void Start() {
@@ -46,7 +47,6 @@ public class LevelManager : MonoBehaviour
         // GameManager.Instance.LoadPlayerData(); 
 
         //Set Data that we need
-        playerCurrentSkin = GameManager.Instance.currentSkin;
         //playerGold = GameManager.Instance.GetPlayerGold();
     }
 

@@ -14,7 +14,7 @@ public class GoldCounter : MonoBehaviour
     }
 
     private void Update() {
-        textDisplay.GetComponent<TextMeshProUGUI>().text = gold.ToString();
+        textDisplay.GetComponent<TextMeshProUGUI>().text = MainMenuManager.instance.getPlayerGold().ToString();
     }
 
     public void AddGold(){
