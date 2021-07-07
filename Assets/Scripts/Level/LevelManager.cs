@@ -16,6 +16,7 @@ public class LevelManager : MonoBehaviour
     public DiamondCounter diamondCounter;
     public MachineCounter machineCounter;
     public CinemachineVirtualCamera cam;
+    public MiniMap miniMapCam;
     public PointFollow followPoint;
 
     public bool isCompleteLevel;
@@ -58,6 +59,7 @@ public class LevelManager : MonoBehaviour
         GameObject player = Instantiate(playerPrefab, respownPoint.position, Quaternion.identity);
 
         cam.Follow = player.transform;
+        miniMapCam.player = player.transform;
         followPoint.unitGameObject = player.transform;
     }
 

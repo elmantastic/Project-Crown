@@ -53,6 +53,7 @@
      <Compile Include="Assets\Scripts\Helper\Instruction.cs" />
      <Compile Include="Assets\Scripts\Helper\MeshRendererSortLayer.cs" />
      <Compile Include="Assets\Scripts\Level\Achivement.cs" />
+     <Compile Include="Assets\Scripts\Level\AudioManager.cs" />
      <Compile Include="Assets\Scripts\Level\FinishLevelTrigger.cs" />
      <Compile Include="Assets\Scripts\Level\GameManager.cs" />
      <Compile Include="Assets\Scripts\Level\GameOver.cs" />
@@ -61,6 +62,7 @@
      <Compile Include="Assets\Scripts\Menu\MainMenu.cs" />
      <Compile Include="Assets\Scripts\Menu\MainMenuManager.cs" />
      <Compile Include="Assets\Scripts\Menu\MapSelect.cs" />
+     <Compile Include="Assets\Scripts\Menu\PauseMenu.cs" />
      <Compile Include="Assets\Scripts\Menu\Shop.cs" />
      <Compile Include="Assets\Scripts\Menu\SkinDisplay.cs" />
      <Compile Include="Assets\Scripts\Platform\PlatformMat.cs" />
