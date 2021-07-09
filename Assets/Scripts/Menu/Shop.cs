@@ -83,6 +83,7 @@ public class Shop : MonoBehaviour
     public void OnButtonClick(int colorIndex){
         //do something
         buttonUseSkin.interactable = true;
+        MainMenuManager.instance.SoundSelectSkin();
         // set mycurrentskin to selected color
         for( int i = 0; i < myAvailableSkin.Count; i++){
             if(i == colorIndex){

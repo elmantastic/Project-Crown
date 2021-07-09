@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    public static GameManager instance;
+    private static GameManager instance;
 
     public bool MainMenuContinue;
 
@@ -30,23 +30,60 @@ public class GameManager : MonoBehaviour
     public float[] playerCurrentSkin;
     public float[,] playerSkinAvailable;
 
+    [Header("Audio UI SFX")]
+    // cache
+    private AudioManager audioManager;
+    public string menuHoverSoundName;
+    public string openMenuSoundName;
+    public string exitMenuSoundName;
+    public string selectSkinSoundName;
+    public string purchaseSkinSoundName;
+    public string equipSkinSoundName;
+
+    [Header("Audio GAMEPLAY SFX")]
+    public string playerJumpSoundName;
+    public string playerDashSoundName;
+    public string playerHealSoundName;
+    public string playerDamagedSoundName;
+    public string playerDeathSoundName;
+    public string attack1SoundName;
+    public string attack2SoundName;
+    public string playerCollectDiamond;
+    public string playerHitMachine;
+    public string machineDestroyed;
+    public string playerRespawnSoundName;
+    public string complateLevelSoundName;
+    public string gameOverSoundName;
+
     private void Awake() {
-        instance = this;        
-        DontDestroyOnLoad(this.gameObject);
+        if(instance == null){
+            instance = this;
+            DontDestroyOnLoad(this.gameObject);
+            return;
+        } else {
+            Destroy(this.gameObject);
+
+        }
     }
 
     private void Start() {
         platformColor = laserGreen;
         //AvailableSkins[0] = defaultSkin;
         //SetAvailableSkins();
+
+        //caching
+        audioManager = AudioManager.instance;
+        if(audioManager == null ){
+            Debug.LogError("No AudioManager Found In The Scene!");
+        }
     }
 
     public static GameManager Instance {
         get {
-            if(instance==null) {
-                GameObject go = new GameObject("GameManager");
-                go.AddComponent<GameManager>();
-            }
+            // if(instance==null) {
+            //     GameObject go = new GameObject("GameManager");
+            //     go.AddComponent<GameManager>();
+            // }
  
             return instance;
         }
@@ -239,4 +276,83 @@ public class GameManager : MonoBehaviour
             AvailableSkins.Add(currentSkin);
         }
     }
+
+
+    #region Sound Area
+
+        // SFX_UI
+        public void SoundMenuHover(){
+            audioManager.PlaySound(menuHoverSoundName);
+        }
+        public void SoundOpenMenu(){
+            audioManager.PlaySound(openMenuSoundName);
+        }
+        public void SoundExitMenu(){
+            audioManager.PlaySound(exitMenuSoundName);
+        }
+        public void SoundSelectSkin(){
+            audioManager.PlaySound(selectSkinSoundName);
+        }
+        public void SoundPurchaseSkin(){
+            audioManager.PlaySound(purchaseSkinSoundName);
+        }
+        public void SoundEquipSkin(){
+            audioManager.PlaySound(equipSkinSoundName);
+        }
+
+        // SFX_GAMEPLAY
+        
+        // Player
+        public void SoundPlayerJump(){
+            audioManager.PlaySound(playerJumpSoundName);
+        }
+        public void SoundPlayerDash(){
+            audioManager.PlaySound(playerDashSoundName);
+        }
+        public void SoundPlayerHeal(){
+            audioManager.PlaySound(playerHealSoundName);
+        }
+        public void SoundPlayerDamaged(){
+            audioManager.PlaySound(playerDamagedSoundName);
+        }
+        public void SoundPlayerDeath(){
+            audioManager.PlaySound(playerDeathSoundName);
+        }
+        public void SoundPlayerAttack1(){
+            audioManager.PlaySound(attack1SoundName);
+        }
+        public void SoundPlayerAttack2(){
+            audioManager.PlaySound(attack2SoundName);
+        }
+        public void SoundPlayerCollectDiamond(){
+            audioManager.PlaySound(playerCollectDiamond);
+        }
+        public void SoundPlayerHitMachine(){
+            audioManager.PlaySound(playerHitMachine);
+        }
+        public void SoundPlayerDestroyMachine(){
+            audioManager.PlaySound(machineDestroyed);
+        }
+        public void SoundPlayerRespawn(){
+            audioManager.PlaySound(playerRespawnSoundName);
+        }
+
+        // Level
+        public void SoundCompleteLevel(){
+            audioManager.PlaySound(complateLevelSoundName);
+        }
+        public void SoundGameOver(){
+            audioManager.PlaySound(gameOverSoundName);
+        }
+        public void StopSoundCompleteLevel(){
+            audioManager.StopSound(complateLevelSoundName);
+        }
+        public void StopSoundGameOver(){
+            audioManager.StopSound(gameOverSoundName);
+        }
+        
+
+
+    #endregion
+
 }

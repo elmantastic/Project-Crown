@@ -21,6 +21,7 @@ public class GameOver : MonoBehaviour
 
     private void CheckInput(){
         if(canContinue && (Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown(KeyCode.Space))){
+            GameManager.Instance.StopSoundGameOver();
             LevelManager.instance.ExitLevel();
         }
     }

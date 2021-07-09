@@ -269,6 +269,7 @@ GameObject:
   - component: {fileID: 24218531}
   - component: {fileID: 24218530}
   - component: {fileID: 24218529}
+  - component: {fileID: 24218532}
   m_Layer: 0
   m_Name: ButtonControls
   m_TagString: Untagged
@@ -361,6 +362,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 993582782}
+        m_MethodName: SoundOpenMenu
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &24218530
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -398,6 +410,34 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 24218527}
   m_CullTransparentMesh: 0
+--- !u!114 &24218532
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 24218527}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 993582782}
+          m_MethodName: SoundMenuHover
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &28975156
 GameObject:
   m_ObjectHideFlags: 0
@@ -1661,6 +1701,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 993582782}
+        m_MethodName: SoundSelectSkin
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &161633601
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1978,6 +2029,7 @@ GameObject:
   - component: {fileID: 262822276}
   - component: {fileID: 262822275}
   - component: {fileID: 262822274}
+  - component: {fileID: 262822277}
   m_Layer: 0
   m_Name: ButtonExit
   m_TagString: Untagged
@@ -2070,6 +2122,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 993582782}
+        m_MethodName: SoundExitMenu
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &262822275
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2107,6 +2170,34 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 262822272}
   m_CullTransparentMesh: 0
+--- !u!114 &262822277
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 262822272}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1519304138}
+          m_MethodName: SoundMenuHover
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &270249874
 GameObject:
   m_ObjectHideFlags: 0
@@ -2388,6 +2479,7 @@ GameObject:
   - component: {fileID: 319038963}
   - component: {fileID: 319038962}
   - component: {fileID: 319038961}
+  - component: {fileID: 319038965}
   m_Layer: 0
   m_Name: Map2
   m_TagString: Untagged
@@ -2493,6 +2585,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 993582782}
+        m_MethodName: SoundOpenMenu
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &319038962
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2545,6 +2648,34 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 319038959}
   m_CullTransparentMesh: 0
+--- !u!114 &319038965
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 319038959}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 993582782}
+          m_MethodName: SoundMenuHover
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &345070420
 GameObject:
   m_ObjectHideFlags: 0
@@ -2688,6 +2819,17 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 78944585}
         m_MethodName: PlayLevel1
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 993582782}
+        m_MethodName: SoundOpenMenu
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2931,6 +3073,17 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 78944585}
         m_MethodName: PlayLevel1
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 993582782}
+        m_MethodName: SoundOpenMenu
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4039,6 +4192,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 993582782}
+        m_MethodName: SoundSelectSkin
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &658317670
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4929,6 +5093,7 @@ GameObject:
   - component: {fileID: 846025163}
   - component: {fileID: 846025162}
   - component: {fileID: 846025161}
+  - component: {fileID: 846025164}
   m_Layer: 0
   m_Name: ButtonExit
   m_TagString: Untagged
@@ -5010,6 +5175,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 993582782}
+        m_MethodName: SoundOpenMenu
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &846025162
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5047,6 +5223,34 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 846025159}
   m_CullTransparentMesh: 0
+--- !u!114 &846025164
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 846025159}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 993582782}
+          m_MethodName: SoundMenuHover
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &875983727
 GameObject:
   m_ObjectHideFlags: 0
@@ -5630,6 +5834,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 993582782}
+        m_MethodName: SoundSelectSkin
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &942971351
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5679,6 +5894,7 @@ GameObject:
   - component: {fileID: 945165501}
   - component: {fileID: 945165500}
   - component: {fileID: 945165499}
+  - component: {fileID: 945165502}
   m_Layer: 0
   m_Name: Use
   m_TagString: Untagged
@@ -5760,6 +5976,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 993582782}
+        m_MethodName: SoundEquipSkin
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &945165500
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5797,6 +6024,34 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 945165497}
   m_CullTransparentMesh: 0
+--- !u!114 &945165502
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 945165497}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 993582782}
+          m_MethodName: SoundMenuHover
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &946897437
 GameObject:
   m_ObjectHideFlags: 0
@@ -6114,6 +6369,7 @@ GameObject:
   - component: {fileID: 978433362}
   - component: {fileID: 978433361}
   - component: {fileID: 978433360}
+  - component: {fileID: 978433363}
   m_Layer: 0
   m_Name: ButtonShop
   m_TagString: Untagged
@@ -6206,6 +6462,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 993582782}
+        m_MethodName: SoundOpenMenu
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &978433361
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6243,6 +6510,34 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 978433358}
   m_CullTransparentMesh: 0
+--- !u!114 &978433363
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 978433358}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 993582782}
+          m_MethodName: SoundMenuHover
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &993582781
 GameObject:
   m_ObjectHideFlags: 0
@@ -6253,6 +6548,7 @@ GameObject:
   m_Component:
   - component: {fileID: 993582783}
   - component: {fileID: 993582782}
+  - component: {fileID: 993582784}
   m_Layer: 0
   m_Name: MainMenuManager
   m_TagString: Untagged
@@ -6289,6 +6585,102 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &993582784
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 993582781}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 21fdd714ba664a14a90819a495b4d4ed, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 0.25
+  m_Pitch: 1.1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1003537132
 GameObject:
   m_ObjectHideFlags: 0
@@ -6486,6 +6878,17 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 78944585}
         m_MethodName: PlayLevel3
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 993582782}
+        m_MethodName: SoundOpenMenu
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7317,6 +7720,7 @@ GameObject:
   - component: {fileID: 1136268224}
   - component: {fileID: 1136268223}
   - component: {fileID: 1136268222}
+  - component: {fileID: 1136268225}
   m_Layer: 0
   m_Name: ButtonPlay
   m_TagString: Untagged
@@ -7409,6 +7813,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 993582782}
+        m_MethodName: SoundOpenMenu
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1136268223
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7446,6 +7861,34 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1136268220}
   m_CullTransparentMesh: 0
+--- !u!114 &1136268225
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1136268220}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 993582782}
+          m_MethodName: SoundMenuHover
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &1150275636
 GameObject:
   m_ObjectHideFlags: 0
@@ -7541,6 +7984,17 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 78944585}
         m_MethodName: PlayLevel2
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 993582782}
+        m_MethodName: SoundOpenMenu
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7836,6 +8290,7 @@ GameObject:
   - component: {fileID: 1180213692}
   - component: {fileID: 1180213691}
   - component: {fileID: 1180213694}
+  - component: {fileID: 1180213695}
   m_Layer: 0
   m_Name: Map1
   m_TagString: Untagged
@@ -7993,6 +8448,45 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 993582782}
+        m_MethodName: SoundOpenMenu
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1180213695
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1180213689}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 993582782}
+          m_MethodName: SoundMenuHover
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &1185022981
 GameObject:
   m_ObjectHideFlags: 0
@@ -8669,6 +9163,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 993582782}
+        m_MethodName: SoundSelectSkin
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1218153548
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8810,6 +9315,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 993582782}
+        m_MethodName: SoundOpenMenu
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1234179869
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8942,6 +9458,17 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 78944585}
         m_MethodName: PlayLevel2
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 993582782}
+        m_MethodName: SoundOpenMenu
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -9316,6 +9843,7 @@ GameObject:
   - component: {fileID: 1262461123}
   - component: {fileID: 1262461122}
   - component: {fileID: 1262461121}
+  - component: {fileID: 1262461124}
   m_Layer: 0
   m_Name: ButtonExit
   m_TagString: Untagged
@@ -9408,6 +9936,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 993582782}
+        m_MethodName: SoundExitMenu
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1262461122
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9445,6 +9984,34 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1262461119}
   m_CullTransparentMesh: 0
+--- !u!114 &1262461124
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1262461119}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1519304138}
+          m_MethodName: SoundMenuHover
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &1281704699
 GameObject:
   m_ObjectHideFlags: 0
@@ -9985,6 +10552,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 993582782}
+        m_MethodName: SoundSelectSkin
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1357611173
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10251,6 +10829,17 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 78944585}
         m_MethodName: PlayLevel1
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 993582782}
+        m_MethodName: SoundOpenMenu
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -10878,6 +11467,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 993582782}
+        m_MethodName: SoundSelectSkin
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1474773595
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11092,6 +11692,25 @@ MonoBehaviour:
   playerGold: 0
   playerLevelCompleted: 0
   playerCurrentSkin: []
+  menuHoverSoundName: MenuHover
+  openMenuSoundName: OpenMenu
+  exitMenuSoundName: ExitMenu
+  selectSkinSoundName: SelectSkin
+  purchaseSkinSoundName: PurchaseSkin
+  equipSkinSoundName: EquipSkin
+  playerJumpSoundName: PlayerJump
+  playerDashSoundName: PlayerDash
+  playerHealSoundName: PlayerHeal
+  playerDamagedSoundName: PlayerDamaged
+  playerDeathSoundName: PlayerDeath
+  attack1SoundName: Attack1
+  attack2SoundName: Attack2
+  playerCollectDiamond: PlayerCollectDiamond
+  playerHitMachine: PlayerHitMachine
+  machineDestroyed: MachineDestroyed
+  playerRespawnSoundName: PlayerRespawn
+  complateLevelSoundName: CompleteLevel
+  gameOverSoundName: GameOver
 --- !u!4 &1519304139
 Transform:
   m_ObjectHideFlags: 0
@@ -11118,7 +11737,121 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3963c81bca9717c47adc1adc562b7ad1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sounds: []
+  sounds:
+  - name: OpenMenu
+    clip: {fileID: 8300000, guid: a283da4752d6f6f468a842c9e4a7e99d, type: 3}
+    volume: 0.7
+    pitch: 1
+    randomVolume: 0.1
+    randomPitch: 0.1
+  - name: SelectSkin
+    clip: {fileID: 8300000, guid: 3e96d7194b4775547a066f4b605b1215, type: 3}
+    volume: 0.7
+    pitch: 1
+    randomVolume: 0
+    randomPitch: 0
+  - name: PurchaseSkin
+    clip: {fileID: 8300000, guid: 9992903e3d94f5f46ab78028b7114fd3, type: 3}
+    volume: 0.9
+    pitch: 1
+    randomVolume: 0.1
+    randomPitch: 0.1
+  - name: EquipSkin
+    clip: {fileID: 8300000, guid: a60d14c9826b0ae4e8f73a172a75a6a2, type: 3}
+    volume: 0.7
+    pitch: 1
+    randomVolume: 0.1
+    randomPitch: 0.1
+  - name: ExitMenu
+    clip: {fileID: 8300000, guid: 103c531d3efc71946bbe191c517ae551, type: 3}
+    volume: 0.7
+    pitch: 1
+    randomVolume: 0.1
+    randomPitch: 0.1
+  - name: MenuHover
+    clip: {fileID: 8300000, guid: 9be905d513a54364bac902b4b7e82785, type: 3}
+    volume: 0.7
+    pitch: 1
+    randomVolume: 0.1
+    randomPitch: 0.1
+  - name: PlayerJump
+    clip: {fileID: 8300000, guid: 2075d264e3d35af4ab89085d09d7cfb3, type: 3}
+    volume: 0.8
+    pitch: 1
+    randomVolume: 0.2
+    randomPitch: 0.2
+  - name: PlayerDash
+    clip: {fileID: 8300000, guid: 62e2a75073102e54e9bc2ca09a0431ed, type: 3}
+    volume: 0.7
+    pitch: 1
+    randomVolume: 0
+    randomPitch: 0
+  - name: PlayerHeal
+    clip: {fileID: 8300000, guid: 9be905d513a54364bac902b4b7e82785, type: 3}
+    volume: 0.8
+    pitch: 1
+    randomVolume: 0.1
+    randomPitch: 0.1
+  - name: PlayerDamaged
+    clip: {fileID: 8300000, guid: b3d08c0dfc5aaf74e91f8e42b3745931, type: 3}
+    volume: 0.7
+    pitch: 1
+    randomVolume: 0.1
+    randomPitch: 0.1
+  - name: PlayerDeath
+    clip: {fileID: 8300000, guid: 62e2a75073102e54e9bc2ca09a0431ed, type: 3}
+    volume: 0.9
+    pitch: 0.8
+    randomVolume: 0.1
+    randomPitch: 0.1
+  - name: Attack1
+    clip: {fileID: 8300000, guid: a5dd1875caa52d546b41940c0809a320, type: 3}
+    volume: 0.8
+    pitch: 1
+    randomVolume: 0.2
+    randomPitch: 0.3
+  - name: Attack2
+    clip: {fileID: 8300000, guid: 50f1924050a9b3c49a10dbd7fe4cf254, type: 3}
+    volume: 0.8
+    pitch: 1.2
+    randomVolume: 0.2
+    randomPitch: 0.3
+  - name: PlayerCollectDiamond
+    clip: {fileID: 8300000, guid: 3e37d0410147b4343b6d5f32c044c6d8, type: 3}
+    volume: 0.8
+    pitch: 1.2
+    randomVolume: 0
+    randomPitch: 0
+  - name: PlayerHitMachine
+    clip: {fileID: 8300000, guid: eb346c4a5aff8e340a5729604a13a072, type: 3}
+    volume: 0.8
+    pitch: 1.2
+    randomVolume: 0.2
+    randomPitch: 0.2
+  - name: MachineDestroyed
+    clip: {fileID: 8300000, guid: e9f0bd42b3b486448b349e5e7957f5fa, type: 3}
+    volume: 0.8
+    pitch: 1.2
+    randomVolume: 0.2
+    randomPitch: 0.2
+  - name: PlayerRespawn
+    clip: {fileID: 8300000, guid: 6c85ffcb4d42e9a4e8f867828efe893e, type: 3}
+    volume: 0.8
+    pitch: 1
+    randomVolume: 0
+    randomPitch: 0
+  - name: CompleteLevel
+    clip: {fileID: 8300000, guid: 13d4924b4c7f06341bd5567ddca12941, type: 3}
+    volume: 0.28
+    pitch: 1
+    randomVolume: 0
+    randomPitch: 0
+  - name: GameOver
+    clip: {fileID: 8300000, guid: bc09f9f0a22cb85498615a4c1b327403, type: 3}
+    volume: 0.28
+    pitch: 1
+    randomVolume: 0
+    randomPitch: 0
 --- !u!1 &1532142935
 GameObject:
   m_ObjectHideFlags: 0
@@ -11399,6 +12132,7 @@ GameObject:
   - component: {fileID: 1551901676}
   - component: {fileID: 1551901675}
   - component: {fileID: 1551901674}
+  - component: {fileID: 1551901677}
   m_Layer: 0
   m_Name: ButtonBack
   m_TagString: Untagged
@@ -11491,6 +12225,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 993582782}
+        m_MethodName: SoundExitMenu
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1551901675
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11528,6 +12273,34 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1551901672}
   m_CullTransparentMesh: 0
+--- !u!114 &1551901677
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1551901672}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 993582782}
+          m_MethodName: SoundMenuHover
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &1594139247
 GameObject:
   m_ObjectHideFlags: 0
@@ -12152,6 +12925,7 @@ GameObject:
   - component: {fileID: 1713369786}
   - component: {fileID: 1713369785}
   - component: {fileID: 1713369784}
+  - component: {fileID: 1713369787}
   m_Layer: 0
   m_Name: Buy
   m_TagString: Untagged
@@ -12233,6 +13007,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 993582782}
+        m_MethodName: SoundPurchaseSkin
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1713369785
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12270,6 +13055,34 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1713369782}
   m_CullTransparentMesh: 0
+--- !u!114 &1713369787
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1713369782}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 993582782}
+          m_MethodName: SoundMenuHover
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &1718666904
 GameObject:
   m_ObjectHideFlags: 0
@@ -12587,6 +13400,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 993582782}
+        m_MethodName: SoundOpenMenu
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1720386200
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12865,6 +13689,17 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1098326346}
         m_MethodName: SetBuyDisplaySkin
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 993582782}
+        m_MethodName: SoundSelectSkin
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -13800,6 +14635,7 @@ GameObject:
   - component: {fileID: 2029965560}
   - component: {fileID: 2029965559}
   - component: {fileID: 2029965558}
+  - component: {fileID: 2029965562}
   m_Layer: 0
   m_Name: Map3
   m_TagString: Untagged
@@ -13905,6 +14741,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 993582782}
+        m_MethodName: SoundOpenMenu
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2029965559
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13957,6 +14804,34 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2029965556}
   m_CullTransparentMesh: 0
+--- !u!114 &2029965562
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2029965556}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 993582782}
+          m_MethodName: SoundMenuHover
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &2033430028
 GameObject:
   m_ObjectHideFlags: 0
@@ -14062,6 +14937,17 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1098326346}
         m_MethodName: SetBuyDisplaySkin
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 993582782}
+        m_MethodName: SoundSelectSkin
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -14213,6 +15099,17 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1098326346}
         m_MethodName: SetBuyDisplaySkin
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 993582782}
+        m_MethodName: SoundSelectSkin
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -14429,6 +15326,17 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 78944585}
         m_MethodName: PlayLevel2
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 993582782}
+        m_MethodName: SoundOpenMenu
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

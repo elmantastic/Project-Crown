@@ -270,12 +270,16 @@ public class Player : MonoBehaviour
         
         if(canJump && !isWallSliding){
             rb.velocity = new Vector2(rb.velocity.x, jumpForce);
+            GameManager.Instance.SoundPlayerJump();
+
             amountOfJumpsLeft--;
             jumpCooldown = 0f;
+            
 
         } else if((isWallSliding || isOnWall) && movementInputDirection != facingDirection && movementInputDirection != 0 && canJump){ // hanya bisa jump ke belik arah dari wall
             
             rb.velocity = new Vector2(rb.velocity.x, 0);
+            GameManager.Instance.SoundPlayerJump();
 
             jumpCooldown = 0f;
             isWallSliding = false;
@@ -467,6 +471,7 @@ public class Player : MonoBehaviour
             canMove = false;
             amountOfJumpsLeft = amountOfJumps;
             turnTimer = turnTimerSet;
+            
             Vector2 impulse = new Vector2(5 * -facingDirection, 12);
             rb.AddForce(impulse, ForceMode2D.Impulse);
 

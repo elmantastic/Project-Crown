@@ -30,6 +30,7 @@ public class PlayerSkill : MonoBehaviour
     public void Dashing(){
         isDashing = true;
         dashTimer = 0;
+        GameManager.Instance.SoundPlayerDash();
     }
 
     private void CheckIfDashing(){

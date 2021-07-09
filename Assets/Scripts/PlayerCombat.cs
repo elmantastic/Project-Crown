@@ -76,4 +76,11 @@ public class PlayerCombat : MonoBehaviour
         Gizmos.DrawWireSphere(attackHitBoxPos.position, attackRadius);
     }
 
+    private void PlaySoundAttack1(){
+        GameManager.Instance.SoundPlayerAttack1();
+    }
+    private void PlaySoundAttack2(){
+        GameManager.Instance.SoundPlayerAttack2();
+    }
+
 }

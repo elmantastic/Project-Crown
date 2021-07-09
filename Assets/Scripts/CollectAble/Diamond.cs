@@ -24,6 +24,9 @@ public class Diamond : MonoBehaviour
 
     private IEnumerator BreakDiamond(){
         particle.Play();
+        // sound diamond collected
+        GameManager.Instance.SoundPlayerCollectDiamond();
+
         sr.enabled = false;
         cc.enabled = false;
 

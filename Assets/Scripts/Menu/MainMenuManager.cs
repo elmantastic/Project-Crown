@@ -38,4 +38,25 @@ public class MainMenuManager : MonoBehaviour
         playerGold -= _payment;
         GameManager.Instance.CalculatePlayerPayment(playerGold);
     }
+
+    #region Sound Area
+        public void SoundMenuHover(){
+            GameManager.Instance.SoundMenuHover();
+        }
+        public void SoundOpenMenu(){
+            GameManager.Instance.SoundOpenMenu();
+        }
+        public void SoundExitMenu(){
+            GameManager.Instance.SoundExitMenu();
+        }
+        public void SoundSelectSkin(){
+            GameManager.Instance.SoundSelectSkin();
+        }
+        public void SoundPurchaseSkin(){
+            GameManager.Instance.SoundPurchaseSkin();
+        }
+        public void SoundEquipSkin(){
+            GameManager.Instance.SoundEquipSkin();
+        }
+    #endregion
 }

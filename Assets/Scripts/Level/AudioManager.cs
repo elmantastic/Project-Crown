@@ -28,11 +28,60 @@ public class Sound {
         source.Play();
     }
 
+    public void Stop(){
+        source.Stop();
+    }
+
 }
 
 
 public class AudioManager : MonoBehaviour
 {
+    public static AudioManager instance;
     [SerializeField] Sound[] sounds;
+
+    private void Awake() {
+        if(instance != null){
+            Debug.LogError("More than one AudioManager in the scene");
+        } else {
+            instance = this;
+        }
+        // if(instance == null){
+        //     instance = this;
+        //     return;
+        // }
+
+    }
+
+    private void Start() {
+        for (int i = 0; i < sounds.Length; i++){
+            GameObject _go = new GameObject("Sound_" + i + "_" + sounds[i].name);
+            _go.transform.SetParent(this.transform);
+            sounds[i].SetSource(_go.AddComponent<AudioSource>());
+        }
+    }
+
+    public void PlaySound(string _name){
+        for (int i = 0; i < sounds.Length; i++){
+            if(sounds[i].name == _name){
+                sounds[i].Play();
+                return;
+            }
+        }
+
+        // No Sound Found With _name
+        Debug.LogWarning("AudioManager: Sound not found in list: " + _name);
+    }
+    public void StopSound(string _name){
+        for (int i = 0; i < sounds.Length; i++){
+            if(sounds[i].name == _name){
+                sounds[i].Stop();
+                return;
+            }
+        }
+
+        // No Sound Found With _name
+        Debug.LogWarning("AudioManager: Sound not found in list: " + _name);
+    }
 
 }

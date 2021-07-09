@@ -27,9 +27,11 @@ public class PlayerHealth : MonoBehaviour
         if(currentHealth > 0){
             // player get hurt
             // animation player hurt
+            GameManager.Instance.SoundPlayerDamaged();
         } else {
             // player death
             // animation player die
+            GameManager.Instance.SoundPlayerDeath();
             death.playerDeath();
             currentHealth = startingHealth;
         }
@@ -46,7 +48,7 @@ public class PlayerHealth : MonoBehaviour
 
     public void Heal(){
         StartCoroutine(Healing());
-
+        
     }
 
     public bool isFullHP(){
@@ -55,6 +57,7 @@ public class PlayerHealth : MonoBehaviour
 
     private IEnumerator Healing(){
         ps.Play();
+        GameManager.Instance.SoundPlayerHeal();
         currentHealth = Mathf.Clamp(currentHealth + 2f, 0, startingHealth);
 
         yield return new WaitForSeconds(ps.main.startLifetime.constantMax);

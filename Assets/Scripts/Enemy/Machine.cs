@@ -34,11 +34,16 @@ public class Machine : MonoBehaviour
         if(currentHealth <= 0.0f){
             // die
             StartCoroutine(BreakMachine());
+        } else {
+            // sound hit machine
+            GameManager.Instance.SoundPlayerHitMachine();
         }
     }
 
     private IEnumerator BreakMachine(){
         particle.Play();
+        // sound machine destroyed
+        GameManager.Instance.SoundPlayerDestroyMachine();
         sr.enabled = false;
         bc.enabled = false;
         LevelManager.instance.AddMachineDestroyed();

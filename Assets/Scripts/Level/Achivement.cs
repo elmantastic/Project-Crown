@@ -43,6 +43,7 @@ public class Achivement : MonoBehaviour
     private void CheckInput(){
         if(canContinue && (Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown(KeyCode.Space))){
             GameManager.Instance.SavePlayerData();
+            GameManager.Instance.StopSoundCompleteLevel();
             LevelManager.instance.ExitLevel();
         }
     }

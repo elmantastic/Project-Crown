@@ -18,8 +18,10 @@ public class LevelManager : MonoBehaviour
     public CinemachineVirtualCamera cam;
     public MiniMap miniMapCam;
     public PointFollow followPoint;
+    private AudioSource levelMusicAudio;
 
     public bool isCompleteLevel;
+    public bool isGameOver;
     public int diamondGrabed = 0;
     public int machineDestroyed = 0;
 
@@ -41,6 +43,7 @@ public class LevelManager : MonoBehaviour
         machinePrice = GameManager.Instance.machinePrice;
         platfromColor = GameManager.Instance.platformColor;
         playerCurrentSkin = GameManager.Instance.GetPlayerCurrentSkin();
+        levelMusicAudio = GetComponent<AudioSource>();
     }
 
     private void Start() {
@@ -52,6 +55,7 @@ public class LevelManager : MonoBehaviour
     }
 
     public void PlayerDie(){
+        GameManager.Instance.SoundPlayerRespawn();
         ShowCountDown();
     }
 
@@ -81,6 +85,10 @@ public class LevelManager : MonoBehaviour
     }
 
     public void CompleteLevel(){
+        // sound complete level
+        levelMusicAudio.Stop();
+        GameManager.Instance.SoundCompleteLevel();
+
         diamondGrabed = diamondCounter.GetDiamondCount();
         machineDestroyed = machineCounter.GetMachineDestroyed();
         GameManager.Instance.SetPlayerLevelCompleted(levelCurrentMap);
@@ -88,11 +96,16 @@ public class LevelManager : MonoBehaviour
         completeLevelUI.SetActive(true);
     }
     public void GameOverLevel(){
+        // sound game over
+        levelMusicAudio.Stop();
+        isGameOver = true;
+        GameManager.Instance.SoundGameOver();
+
         gameOverUI.SetActive(true);
     }
 
     public bool StopCountDownTime(){
-        return isCompleteLevel;
+        return isCompleteLevel || isGameOver;
     }
 
     public void ExitLevel(){
@@ -129,5 +142,19 @@ public class LevelManager : MonoBehaviour
     public void SetLevelMap(int _levelMap){
         levelCurrentMap = _levelMap;
     }
+
+
+    #region Sound Area
+        public void SoundMenuHover(){
+            GameManager.Instance.SoundMenuHover();
+        }
+        public void SoundOpenMenu(){
+            GameManager.Instance.SoundOpenMenu();
+        }
+        public void SoundExitMenu(){
+            GameManager.Instance.SoundExitMenu();
+        }
+
+    #endregion
 
 }
